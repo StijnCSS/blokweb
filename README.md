@@ -19,7 +19,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Stijn Zwaard
 
   #### Je startniveau:
- Rood
+  Niet rood maar ook niet blauw
+  zeker geen zwart
 
   #### Je focus:
   Surface plane
