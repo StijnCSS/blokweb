@@ -19,10 +19,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Stijn Zwaard
 
   #### Je startniveau:
- rRood
+ Rood
 
   #### Je focus:
   Surface plane
+  
+  - Video/geluid
+  - Animaties
+  - SVG stylen en animeren
+  - scroll animaties
+  - Advanced positioning
  
 </details>
 
@@ -36,16 +42,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://springsummer.dk/
+  Home & Culture pagina
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Home pagina
+  ![home](https://github.com/StijnCSS/blokweb/assets/121390930/608718a6-c85e-4c70-9428-e60fe51ba7e2)
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
- 
+    
+  Culture pagina
+  ![culture](https://github.com/StijnCSS/blokweb/assets/121390930/d5333bf3-47fd-4c7d-8a27-665f0428d10b)
+
 </details>
 
 
@@ -68,13 +76,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ![breakdown_home](https://github.com/StijnCSS/blokweb/assets/121390930/f5f008d2-6058-44d4-8bf2-6c272d603549)
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  ![menu](https://github.com/StijnCSS/blokweb/assets/121390930/2ac6405f-6947-42f9-9d32-4b4d6dbe226f)
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -88,7 +95,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik moet nog even een sprint maken met mijn html en css, ik zit nog niet lekker in de flow
 
 
   ### Agenda voor meeting
@@ -104,10 +111,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Ik wil volgende les 80% van mijn html en css afhebben
 
 </details>
 
@@ -121,8 +125,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Ik ben klaar met mijn html en css, ik had tijdens de voortgang nog wat vragen over grid en dit is nu opgelost
+  Ik ben lekker bezig en ga nu beginnen met mijn javascript voor de surface plane
+  <img width="999" alt="grid_1" src="https://github.com/StijnCSS/blokweb/assets/121390930/cc052ff3-08e7-44ea-9b13-8dcd1fcfb5a1">
+  ![grid_2](https://github.com/StijnCSS/blokweb/assets/121390930/e2ebb352-f492-450a-a62d-65bf40d47ef7)
 
   ### Agenda voor meeting
   samen met je groepje opstellen
