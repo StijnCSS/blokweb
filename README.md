@@ -27,7 +27,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   
   - Video/geluid
   - Animaties
-  - SVG stylen en animeren
+  - SVG stijlen
   - scroll animaties
   - Advanced positioning
  
