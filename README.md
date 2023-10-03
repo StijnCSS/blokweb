@@ -65,7 +65,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-
+  - De site is niet prettig te navigeren voor mensen die slechtziend zijn omdat het contrast niet goed is van de background en kleur vna de letters.
+  - De site navigeert niet fijn met de screenreader, foto's hebben geen alt teksten de volgorde is wel in orde.
+  - De soort teksten die ze gebruiken zijn simpel genoeg voor iedereen om te begrijpen
+  - De html is niet prettig om te lezen omdat het gemaakt is met een pagebuilder, heel veel inline css en scripts en veel classes.
+  - Active state kan beter
 </details>
 
 
@@ -95,7 +99,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Ik moet nog even een sprint maken met mijn html en css, ik zit nog niet lekker in de flow
+  - Ik moet nog even een sprint maken met mijn html en css, ik zit nog niet lekker in de flow
+  - Read me nog leeg
+  - huidige html en css is goed
 
 
   ### Agenda voor meeting
@@ -111,7 +117,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Ik wil volgende les 80% van mijn html en css afhebben
+  - Ik wil volgende les 80% van mijn html en css afhebben en mijn read me updaten tot waar het moet
 
 </details>
 
@@ -130,22 +136,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img width="999" alt="grid_1" src="https://github.com/StijnCSS/blokweb/assets/121390930/cc052ff3-08e7-44ea-9b13-8dcd1fcfb5a1">
   ![grid_2](https://github.com/StijnCSS/blokweb/assets/121390930/e2ebb352-f492-450a-a62d-65bf40d47ef7)
 
+  Ik had aan Danny gevraagt of mijn Headers in orde waren en hij vond dat het wel semantischer kon, dit aanpassen is geen leuk klusje
+
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Headers checken
+  - Voor volgende voortgangsgesprek wat surface plane dingen afhebben voor feedback
+  - Read me updaten zodat ik dit kan laten checken door studenten assistent
 - ...
 
 </details>
@@ -157,11 +158,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 2/2 (week 4)
 
 <details>
-  <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+  <summary>Mijn site is een stuk toegankelijker dan die van SpringSummer zelf. ik heb het contrast verhoogd en sommige HTML elementen aangepast zodat het minder  clutter heeft.</summary>
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+  - focus states moet ik nog custom maken
+  - Ik kan nog een skip link toevoegen voor toegankelijkheid++
+  - Media video en audio goed verbeterd vergeleken de echte site (autoplay)
 </details>
 
 
