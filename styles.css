@@ -1,6 +1,6 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900 &display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900 &display=swap');< dit heb ik vervangen door Fontface */
 
-
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face */
 @font-face {
     font-family: "Montreal";
     src:
@@ -21,6 +21,7 @@
     format("woff2");
     font-weight: 400;
 }
+
 html {
     --primaireKleur: #ff3c00;
     --primaireKleur50: #ff3c0034;
@@ -125,6 +126,7 @@ html.oranje {
     display: none;}
 
     /* HEADER */
+ 
     header {
         display: flex;
         align-items: center;
@@ -141,8 +143,8 @@ html.oranje {
         backdrop-filter: blur(100px);
         z-index: 10;
     }
-.st0{
-fill: red;}
+       /* https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter */
+    
     .home header a svg, .culture header a svg {
         height: 25px;
         width: 25px;
@@ -154,7 +156,7 @@ fill: red;}
 
     header button {
         margin-left: auto;
-        padding: 1em 0 1em 1em;
+        padding: 1em;
         background: none;
         border: none;
         text-decoration: underline;
@@ -308,6 +310,7 @@ fill: red;}
         color: var(--primaireKleur);
         font-family: var(--monotyp)
     }
+  
 
     /* Join the journey */
     .home section:nth-of-type(4) {
@@ -548,7 +551,7 @@ fill: red;}
     overflow: hidden;
 }
 
-.loader-wrapper{
+.wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -564,7 +567,7 @@ fill: red;}
     animation: 1 .5s linear 3s fade;
     animation-fill-mode: forwards;
 }
-.loader-wrapper h2{
+.wrapper h2{
     margin: 0;
     font-size: 2em;
     line-height: 1;
@@ -622,4 +625,10 @@ opacity:0;
     opacity:0;
     z-index: 0;
     }
+}
+
+
+:focus {
+    outline: 5px solid var(--primaireKleur) !important; /* Add an outline for focus state */
+
 }

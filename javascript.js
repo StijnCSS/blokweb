@@ -4,6 +4,8 @@ const paginaEen = document.querySelector('.home')
 const menuButton = document.querySelector('button');
 const menuOverlay = document.getElementById('menu-overlay');
 
+
+// eventlistener die geactiveerd wordt als ik op de menu knop klik. als display op none staat veranderd de js dit naar flex en als het op flex staat zet de js het op none.
 menuButton.addEventListener('click', () => {
     if (getComputedStyle(menuOverlay).display === 'none') {
         menuOverlay.style.display = 'flex';
@@ -14,7 +16,9 @@ menuButton.addEventListener('click', () => {
     }
 });
 
-// Create an Intersection Observer for the oranje section
+
+// Intersection Observer https://blog.webdevsimplified.com/2022-01/intersection-observer/
+
 const oranjeObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
       const intersecting = entry.isIntersecting;
@@ -26,11 +30,11 @@ const oranjeObserver = new IntersectionObserver(entries => {
   });
 });
 
-// Select the oranje section and start observing it
+// Target de class oranje en observeer dit
 const oranjeSection = document.querySelector(".oranje");
 oranjeObserver.observe(oranjeSection);
 
-// Create an Intersection Observer for the zwart footer
+// Als de class zwart in de viewport komt triggered dit 
 const zwartObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
       const intersecting = entry.isIntersecting;
@@ -42,12 +46,12 @@ const zwartObserver = new IntersectionObserver(entries => {
   });
 });
 
-// Select the zwart footer and start observing it
+// Target de class zwart en observeer dit
 const zwartFooter = document.querySelector("footer.zwart");
 zwartObserver.observe(zwartFooter);
 
 
-// de css voegt overflow hidden toe op de body en dit gaat na 2 seconden weg door de class te vewijderen van de body. 
+// de css no-scroll voegt overflow hidden toe op de body en dit gaat na 2 seconden weg door de class te vewijderen van de body. 
 
 paginaEen.classList.add('no-scroll');
 setTimeout(function() {
