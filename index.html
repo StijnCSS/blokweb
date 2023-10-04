@@ -4,18 +4,39 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Spring/Summer</title>
+        <title>Spring/Summer | Copenhagen</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/x-icon" href="content/logo.svg">
     </head>
-   
-    <body class="home">
-        
-        <header>
-            <img src="/content/logo.svg" alt="Spring/Summer Logo">
-            <p>Spring/Summer™</p>
-            <button id="menu-button">Menu</button>
 
+    <body class="home">
+
+        <header>
+            <a href="index.html">
+            
+            <img src="content/logo.svg" alt="Spring/Summer Logo">
+            
+            <p>Spring/Summer™</p>
+        </a>
+            <button id="menu-button">Menu</button>
         </header>
+        
+        <div id="menu-overlay">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">approach</a></li>
+                    <li><a href="culture.html">culture</a></li>
+                    <li><a href="#">join us</a></li>
+                    <li><a href="#">10 years</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="loader-wrapper">
+            <h2>creating</h2>
+            <h2 class="roteren"></h2>
+            <h2>all season</h2>
+        </div>
         <main>
             <h3>We are a design agency based in Copenhagen. With a strong belief in strategically founded and highly crafted digital experiences, we strive to create remarkable solutions that captivate our clients and their audiences.</h3>
 
@@ -23,50 +44,40 @@
                 <h1>10 years of s/s</h1>
 
                 <video controls>
-                    <source src="/content/showreel.mp4">
+                    <source src="content/showreel.mp4">
 
-                    <source src="/content/showreel.mp4" type="video/mp4">
+                    <source src="content/showreel.mp4" type="video/mp4">
                 </video>
 
             </section>
 
             <h4>Digital First Design Agency</h4>
             <p>In January 2013 Spring/Summer came to life with a clear idea of how a modern design agency could be run. Gathering the best talent fuelled by high ambitions and projects run in a way where quality is the last thing to be sacrificed, we design online shops, corporate websites and brand identities with a strong root in the Scandinavian design philosophies where functionality meets aesthetics and the whole becomes greater than the sum of its parts.</p>
-
-            <ul>
-                <li>
-                    <h4>Digital experiences</h4>
-                </li>
-                <li>
-                    <a href=""><img src="/content/arrow_left.svg" alt="previous project button"></a>
-                </li>
-                <li>
-                    <a href=""><img src="/content/arrow_right.svg" alt="next project button"></a>
-                </li>
-            </ul>
         </main>
+        
+        <h4>our projects</h4>
+        
         <section>
-<!-- div maken? -->
             <article>
                 <h4>American Express</h4>
                 <p>Various Project types</p>
-                <img src="/content/AE_card.png" alt="Golden American Express card">
+                <img src="content/AE_card.png" alt="Golden American Express card">
             </article>
 
             <article>
                 <h4>Roskilde Festival</h4>
                 <p>more than music</p>
-                <img src="/content/goya.jpeg" alt="Website for Roskilde Festival">
+                <img src="content/goya.jpeg" alt="Website for Roskilde Festival">
             </article>
-            
+
             <article>
                 <h4>Andersen-Andersen</h4>
                 <p>Online Flagship Store</p>
-                <img src="/content/knitted.jpeg" alt="website for Knitted to last a lifetime">
+                <img src="content/knitted.jpeg" alt="website for Knitted to last a lifetime">
             </article>
-            
+
         </section>
-        
+
         <section>
             <h4>What we do</h4>
 
@@ -77,7 +88,7 @@
                 <li><a>Apps</a></li>
             </ul>
         </section>
-        
+
         <section>
             <h4>Technologies and Industries</h4>
             <ul>
@@ -111,9 +122,9 @@
                     <a href=""></a>Wordpress</li>
             </ul>
         </section>
-        
-        <section>
-            <h2>Join the journey</h2>
+
+        <section class="oranje">
+            <h2 id="my-element">Join the journey</h2>
 
             <h3>Head of technology</h3>
             <p>Experienced & Highly skilled</p>
@@ -127,15 +138,16 @@
             </p>
         </section>
         <section>
-            <img src="/content/Selfietime.png" alt="showreel of our latest work We have made campaign for brands like House of Goya and many more.">
-            <img src="/content/voetbal_water.png" alt="showreel of our latest work We have made campaign for brands like House of Goya and many more.">
+        <h3 class="hidden">We like to have fun</h3>
+            <img src="content/Selfietime.png" alt="showreel of our latest work We have made campaign for brands like House of Goya and many more.">
+            <img src="content/voetbal_water.png" alt="showreel of our latest work We have made campaign for brands like House of Goya and many more.">
         </section>
-        <footer>
+        <footer class="zwart">
             <h4>Contact us</h4>
 
-            <p>Tell us about your project. </p>
+            <p>Tell us about your project.
+            </p>
             <p>Let's collaborate and make great stuff.</p>
-            <!-- kan een section in de footer? -->
             <ul>
                 <li>
                     <a href="">
@@ -164,18 +176,6 @@
 
             <p class="mb">© Spring/Summer - 2023</p>
         </footer>
-        <!-- test -->
-        <div id="menu-overlay">
-            <div id="menu">
-                <ul>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">approach</a></li>
-                    <li><a href="#">culture</a></li>
-                    <li><a href="#">join us</a></li>
-                    <li><a href="#">10 years</a></li>
-                </ul>
-            </div>
-        </div>
         
         <script src="javascript.js"></script>
 

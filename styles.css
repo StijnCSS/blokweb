@@ -1,18 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900 &display=swap');
 
-/* gebruik ik de juiste dingen a & buttons */
-/* max width toevoegen */:root
-{
+/* @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900 &display=swap'); */
+
+
+@font-face {
+    font-family: "Montreal";
+    src:
+    url(/content/fonts/PPNeueMontreal-Regular.woff2) format("woff2");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Grotesk";
+    src:
+    url(/content/fonts/PPRightGrotesk-CompactBlack.woff2)
+    format("woff2");
+    font-weight:900;
+}
+@font-face {
+    font-family: "Mono";
+    src: 
+    url(/content/fonts/PPSupplyMono-Light.woff2)
+    format("woff2");
+    font-weight: 400;
+}
+html {
     --primaireKleur: #ff3c00;
     --primaireKleur50: #ff3c0034;
     --secondaireKleur: #f4f0e6;
-    --contrastKleur: #000000;
-    --wit: #ffffff;
+    --contrastKleur: #161616;
+    --wit: #f4f0e6;
     --rondehoek: 0.3em;
-    --mainfont: 'Public Sans', sans-serif;
-    --monotyp: monospace;
-    }/* geen verticale scrollbalk */:-webkit-scrollbar
-    {
+    --copy: "Montreal";
+    --display: "Grotesk";
+    --monotyp: "mono";
+    --tsvgKleur:brightness(1) invert(0);
+    
+    }
+    
+html.oranje {
+    --primaireKleur: #f4f0e6;
+    --secondaireKleur:  #ff3c00;
+    --primaireKleur50: #f4f0e673;
+    --contrast: 1000%;
+    --svgKleur:brightness(0) invert(1);
+ }   
+ 
+ html.zwart{
+    --primaireKleur:     #f4f0e6;
+    --primaireKleur50:   #f4f0e673;
+    --secondaireKleur:   #161616;
+    --svgKleur:brightness(0) invert(1);
+ }
+ 
+
+    
+ /* geen verticale scrollbalk */   
+ :-webkit-scrollbar {
         display: none;
     }
 
@@ -30,39 +72,37 @@
     body {
         margin: 0 1em;
         background-color: var(--secondaireKleur);
-
     }
+    
 
 
     /* TYPOGRAFIE */
 
-    h1,
-    h2,
     h3,
     h4,
     p,
     a,
     button {
         color: var(--primaireKleur);
-        font-family: var(--mainfont);
+        font-family: var(--copy);
     }
-
+    
     h1,
     h2 {
+        color: var(--primaireKleur);
+        font-family: var(--display);
         line-height: .8;
         font-weight: 900;
         text-transform: uppercase;
     }
 
     h1 {
-        font-size: 25vw;
-        letter-spacing: -0.05em;
+        font-size: 35vw;
+
     }
 
     h2 {
         font-size: 17vw;
-        letter-spacing: -3px;
-        letter-spacing: -0.05em;
         margin: 1em 0;
     }
 
@@ -74,8 +114,7 @@
 
     h4 {
         font-family: var(--monotyp);
-        font-size: 1.1em;
-        font-weight: 300;
+        font-size: 1em;
         margin: 1.3em 0;
     }
 
@@ -87,7 +126,8 @@
     .mb {
         margin-bottom: 4em;
     }
-
+    .hidden{
+    display: none;}
 
     /* HEADER */
     header {
@@ -99,19 +139,18 @@
         right: 0;
 
         padding: 0 1em;
-        height: 50px;
+        height: 8vh;
         gap: 0.5em;
         border-bottom: 1px solid var(--primaireKleur);
-        backdrop-filter: blur(10px);
+        backdrop-filter: blur(100px);
         z-index: 10;
     }
 
-    .culture header img,
-    .home header img {
+    .home header a img, .culture header a img {
         height: 25px;
         width: 25px;
         margin: 0;
-
+        filter: var(--svgKleur);
     }
 
     header button {
@@ -120,6 +159,13 @@
         background: none;
         border: none;
         text-decoration: underline;
+    }
+    
+    header a{
+        text-decoration: none;
+        display: flex;
+        gap: 10px;
+        
     }
     /* HOMEPAGE */
     .home main h3 {
@@ -165,11 +211,12 @@
         display: flex;
         padding: 1em 1em 1em 0;
         gap: 1em;
-        overflow-x: auto;
+        overflow-x:scroll;
     }
 
     /* breakout grid proberen*/
     .home section:nth-of-type(1) article {
+    
         padding: 0.5em;
         width: 70vw;
         height: 300px;
@@ -179,7 +226,7 @@
 
     .home section:nth-of-type(1) article h4 {
         font-size: 0.8em;
-        font-family: var(--mainfont);
+        font-family: var(--copy);
         padding: 0;
         margin: 0;
         color: var(--wit);
@@ -189,6 +236,13 @@
         font-size: 0.9em;
         font-family: var(--monotyp);
         color: var(--wit);
+    }
+    
+    .home section:nth-of-type(1) article img {
+        position: absolute;
+        inset: 0;
+        margin: auto;
+        width: 80%;
     }
 
     .home section:nth-of-type(1) article:nth-child(1) {
@@ -209,12 +263,7 @@
         background-size: cover;
     }
 
-    .home section:nth-of-type(1) article img {
-        position: absolute;
-        inset: 0;
-        margin: auto;
-        width: 80%;
-    }
+ 
 
     /* What we do */
     ul {
@@ -420,46 +469,121 @@
         width: 90%;
     }
     
-    /* hamburger menu */
-    
-    /* CSS for the menu overlay */
-#menu-overlay {
-    display: none;
-    position: fixed;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(10px); 
-    z-index: 20; 
-    opacity: 0; /* Initially transparent */
-    transition: opacity 1s; /* Add opacity transition animation */
-}
+    /* Fullscreen menu*/
+    #menu-overlay {
+        display: none; 
+        justify-content: center;
+        align-items: flex-start; 
+        
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 91.9vh;
+        
+        backdrop-filter: blur(100px);
+        z-index: 29;  
+    }
 
 /* CSS for the menu container */
 #menu {
-    display: block;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 5px;
+    list-style: none;
+    padding-top: 2em;
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-/* CSS for the menu items */
-#menu ul {
-    list-style-type: none;
+#menu li {
+    margin-right: 20px; /* Adjust spacing between menu items */
 }
+
 
 #menu a {
-    text-decoration: none;
     color: var(--primaireKleur);
-    font-weight: 900;
-    font-size: 15vw;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    font-family: var(--display);
     text-transform: uppercase;
-    padding: 0 .5em;
+    font-size: 4em; 
+    padding: 0;
+    margin: 0;
+}
 
+
+
+/* loading animation */
+.loader-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--secondaireKleur);
+    z-index: 30;
+    animation: 1 .5s linear 3s fade;
+    animation-fill-mode: forwards;
+}
+.loader-wrapper h2{
+    margin: 0;
+    font-size: 2em;
+    line-height: 1;
+
+}
+.hidden{
+opacity:0;
+}
+
+.roteren{
+    color: var(--primaireKleur);
+}
+
+.roteren:after{
+    content: "";
+    animation: tekst_veranderen 2s linear infinite;
+    
+}
+
+@keyframes tekst_veranderen{
+    0%{
+        content: "E-commerce";
+    }
+    12.5%{
+        content: "websites";
+    }
+    25%{
+        content: "Visual identities";
+    }
+    37.5%{
+        content: "Apps";
+    }
+    50%{
+        content: "Proud moments";
+    }
+    62.5%{
+        content: "Shopify plus";
+    }
+    75%{
+        content: "strong brands";
+    }
+    87.5%{
+        content: "Good coffee";
+    }
+    100%{
+        content: "E-commerce";
+    }
+}
+@keyframes fade{
+    0%{
+    opacity:1;
+    z-index: 30;
+    }
+    100%{
+    opacity:0;
+    z-index: 0;
+    }
 }
