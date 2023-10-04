@@ -1,24 +1,23 @@
-
 /* @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900 &display=swap'); */
 
 
 @font-face {
     font-family: "Montreal";
     src:
-    url(/content/fonts/PPNeueMontreal-Regular.woff2) format("woff2");
+    url(content/fonts/PPNeueMontreal-Regular.woff2) format("woff2");
     font-weight: 400;
 }
 @font-face {
     font-family: "Grotesk";
     src:
-    url(/content/fonts/PPRightGrotesk-CompactBlack.woff2)
+    url(content/fonts/PPRightGrotesk-CompactBlack.woff2)
     format("woff2");
     font-weight:900;
 }
 @font-face {
     font-family: "Mono";
     src: 
-    url(/content/fonts/PPSupplyMono-Light.woff2)
+    url(content/fonts/PPSupplyMono-Light.woff2)
     format("woff2");
     font-weight: 400;
 }
@@ -145,13 +144,16 @@ html.oranje {
         backdrop-filter: blur(100px);
         z-index: 10;
     }
-
-    .home header a img, .culture header a img {
+.st0{
+fill: red;}
+    .home header a svg, .culture header a svg {
         height: 25px;
         width: 25px;
         margin: 0;
-        filter: var(--svgKleur);
+        /* filter: var(--svgKleur); */
+        fill: var(--primaireKleur);
     }
+    
 
     header button {
         margin-left: auto;
@@ -247,19 +249,19 @@ html.oranje {
 
     .home section:nth-of-type(1) article:nth-child(1) {
         position: relative;
-        background-image: url('/content/goldenpillars.jpeg');
+        background-image: url('content/goldenpillars.jpeg');
         background-size: cover;
     }
 
     .home section:nth-of-type(1) article:nth-child(2) {
         position: relative;
-        background-image: url('/content/gradient.jpeg');
+        background-image: url('content/gradient.jpeg');
         background-size: cover;
     }
 
     .home section:nth-of-type(1) article:nth-child(3) {
         position: relative;
-        background-image: url('/content/materials.jpeg');
+        background-image: url('content/materials.jpeg');
         background-size: cover;
     }
 
