@@ -30,6 +30,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - SVG stijlen
   - scroll animaties
   - Advanced positioning
+  - DOM manipulatie
  
 </details>
 
@@ -105,20 +106,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - huidige html en css is goed
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Ik wil volgende les 80% van mijn html en css afhebben en mijn read me updaten tot waar het moet
+  - Ik wil volgende les 80% van mijn html en css afhebben
+  - Read me up to date
+  - goede vragen voorbereiden voor volgende gesprek zodat ik goed gebruik kan maken van de assistenten
 
 </details>
 
@@ -178,26 +173,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik heb alle html en css af. Ik heb zelf met javascript een hamburger menu gemaakt en een css loading animation. Ik heb alleen nog een setje in de goede richting nodig voor scroll animaties.
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
+Ik heb samen met Tije gekeken naar  de scroll animatie en toen we bezig waren kwam Sanne meekijken en die had mij verteld dat ik Intersection Observer moest gebruiken omdat de javascript die ik samen met Tije aan het gebruiken was outdated was. Door Sanne ben ik in de goede richting aan het gaan en moet ik alleen nog een extra Intersection Observer toevoegen zodat ik de zwarte kleur krijg die je ziet als je de footer ziet.
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+Verder heb ik mijn Readme laten zien maar daar was hij niet zeker van of het goed was omdat hij dat zelf niet wist.
 
 </details>
 
@@ -240,7 +225,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. Vermeld de bronnen ook in je code.
 
   1. Intersection Observer https://blog.webdevsimplified.com/2022-01/intersection-observer/
-  2. bron 2
-  3. ...
+  2. https://stackoverflow.com/questions/29322852/how-to-block-disable-scrolling-for-seconds-on-page-load-with-jquery
+  3. https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter
+  4. https://www.youtube.com/shorts/lNxpdi4f8Q8
+  5. Chat GPT voor SVG's stijlen 
 
 </details>
