@@ -18,7 +18,7 @@ menuButton.addEventListener('click', () => {
 
 
 // Intersection Observer https://blog.webdevsimplified.com/2022-01/intersection-observer/
-
+// Als 
 const oranjeObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
       const intersecting = entry.isIntersecting;
