@@ -25,7 +25,7 @@ html {
     --primaireKleur: #ff3c00;
     --primaireKleur50: #ff3c0034;
     --secondaireKleur: #f4f0e6;
-    --contrastKleur: #161616;
+    --contrastKleur: #1a1a1a;
     --wit: #f4f0e6;
     --rondehoek: 0.3em;
     --copy: "Montreal";
@@ -39,14 +39,13 @@ html.oranje {
     --primaireKleur: #f4f0e6;
     --secondaireKleur:  #ff3c00;
     --primaireKleur50: #f4f0e673;
-    --contrast: 1000%;
     --svgKleur:brightness(0) invert(1);
  }   
  
  html.zwart{
     --primaireKleur:     #f4f0e6;
     --primaireKleur50:   #f4f0e673;
-    --secondaireKleur:   #161616;
+    --secondaireKleur:   #1a1a1a;
     --svgKleur:brightness(0) invert(1);
  }
  
@@ -65,7 +64,6 @@ html.oranje {
 
     html {
         max-width: 100%;
-
     }
 
     body {
@@ -73,8 +71,6 @@ html.oranje {
         background-color: var(--secondaireKleur);
     }
     
-
-
     /* TYPOGRAFIE */
 
     h3,
@@ -141,6 +137,7 @@ html.oranje {
         height: 8vh;
         gap: 0.5em;
         border-bottom: 1px solid var(--primaireKleur);
+        -webkit-backdrop-filter: blur(100px);
         backdrop-filter: blur(100px);
         z-index: 10;
     }
@@ -209,7 +206,7 @@ fill: red;}
 
 
     /* cards horizontal scroll */
-    .home section:nth-of-type(1) {
+    .home .carousel {
         display: flex;
         padding: 1em 1em 1em 0;
         gap: 1em;
@@ -217,51 +214,57 @@ fill: red;}
     }
 
     /* breakout grid proberen*/
-    .home section:nth-of-type(1) article {
+    .home .carousel article {
     
-        padding: 0.5em;
+        padding: 1em;
         width: 70vw;
         height: 300px;
         border-radius: var(--rondehoek);
         flex: none;
     }
 
-    .home section:nth-of-type(1) article h4 {
-        font-size: 0.8em;
+    .home .carousel article h4 {
+        font-size: 1em;
         font-family: var(--copy);
         padding: 0;
         margin: 0;
         color: var(--wit);
     }
 
-    .home section:nth-of-type(1) article p {
+    .home .carousel article p {
         font-size: 0.9em;
         font-family: var(--monotyp);
         color: var(--wit);
     }
     
-    .home section:nth-of-type(1) article img {
+    .home .carousel article img {
         position: absolute;
         inset: 0;
         margin: auto;
         width: 80%;
     }
 
-    .home section:nth-of-type(1) article:nth-child(1) {
+    .home .carousel article:nth-child(2) {
         position: relative;
         background-image: url('content/goldenpillars.jpeg');
         background-size: cover;
     }
 
-    .home section:nth-of-type(1) article:nth-child(2) {
+    .home .carousel article:nth-child(3) {
         position: relative;
         background-image: url('content/gradient.jpeg');
         background-size: cover;
     }
 
-    .home section:nth-of-type(1) article:nth-child(3) {
+    .home .carousel article:nth-child(4) {
         position: relative;
         background-image: url('content/materials.jpeg');
+        background-size: cover;
+    }
+    
+    .home .carousel article:nth-child(5) {
+        position: relative;
+        background-image: url('content/roskilde.jpeg');
         background-size: cover;
     }
 
@@ -336,30 +339,35 @@ fill: red;}
     }
     /* footer */
 
-    footer ul {
+    footer.zwart ul {
         display: flex;
         gap: 1em;
+        
         margin-top: 3em;
     }
 
-    footer a {
+    footer.zwart a {
         color: var(--primaireKleur);
+        font-family: var(--monotyp);
+        
         display: flex;
         align-items: center;
         gap: 1em;
-        font-family: var(--monotyp);
+        
     }
-    footer img {
-        width: 25px !important;
+    footer.zwart img {
+        width: 25px;
         height: 25px;
         padding: 0.5em;
+        margin: 0;
         border-radius: var(--rondehoek);
         background-color: #fffcf9;
     }
 
-    footer ul:nth-of-type(2) {
+    footer.zwart ul:nth-of-type(2) {
         display: flex;
         justify-content: space-between;
+        
         color: var(--primaireKleur);
     }
 
@@ -406,6 +414,10 @@ fill: red;}
         width: 70vw;
     }
     
+    .culture section:nth-of-type(3) p:last-child
+        {
+        margin: 1em 0 2em 0;}
+    
 /* personeel */ /* personeel */ /* personeel */
     .personeel {
         display: grid;
@@ -448,30 +460,48 @@ fill: red;}
         font-family: monospace;
     }
     
+    .culture section:nth-of-type(4) h3{
+        font-size: 4em;
+        margin-top: 1em;
+    }
+    
     .culture section:nth-of-type(4) article{
         width: 100%;
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
+        justify-content: flex-start;
+        
         margin: auto;
-        border-bottom: 1px solid var(--primaireKleur);
-        padding: .5em 0 .25em 0;
+        border-bottom: 1px solid var(--primaireKleur50);
+        padding: 1em 0 .5em 0;
+        gap: 10vw;
+        
         
     }
-    .culture section:nth-of-type(4) article h4{
-    margin: 0;
+    .culture section:nth-of-type(4) article div{
+        flex-grow: 1;
+        
     }
+    
+    .culture section:nth-of-type(4) article h4{
+    margin: 0 0 1em 0;
+    font-family: var(--copy);
+    }
+    .culture section:nth-of-type(4) article p{
+    font-family: var(--monotyp);
+    font-size: .8em;
+    }
+    
 
     
     .culture section:nth-of-type(4) article img{
-        width: 5vw;
+        width: 2em;
+        padding: 0 1em 0 1em;
     }
     
-    .culture section:nth-of-type(4) article div{
-        width: 90%;
-    }
+
     
-    /* Fullscreen menu*/
+/* Fullscreen menu*/
     #menu-overlay {
         display: none; 
         justify-content: center;
@@ -482,7 +512,7 @@ fill: red;}
         bottom: 0;
         width: 100%;
         height: 91.9vh;
-        
+        -webkit-backdrop-filter: blur(100px);
         backdrop-filter: blur(100px);
         z-index: 29;  
     }
@@ -514,6 +544,10 @@ fill: red;}
 
 
 /* loading animation */
+.no-scroll {
+    overflow: hidden;
+}
+
 .loader-wrapper{
     display: flex;
     flex-direction: column;
