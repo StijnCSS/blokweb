@@ -1,5 +1,6 @@
-### De opdracht
-Om 100% te focussen op programmeren en niet op designen kregen wij de opdracht om een website na te bouwen met html, css en Javascript. Ik heb gekozen om de site van Spring/Summer na te maken omdat deze er goed uitziet en interessante elementen en interacties heeft.
+# De opdracht
+Om 100% te focussen op programmeren en niet op designen kregen wij de opdracht om een website na te bouwen met html, css en Javascript. Ik heb gekozen om de site van Spring/Summer na te maken omdat deze er goed uitziet en interessante elementen en interacties heeft.  
+(Deze opdracht is gemaakt in leerjaar 2)
 
 
 
